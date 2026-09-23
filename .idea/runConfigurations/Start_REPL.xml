@@ -3,7 +3,7 @@
     <option name="configVersion" value="1" />
     <option name="displayName" value="Start REPL" />
     <option name="focusEditor" value="true" />
-    <module name="graphs" />
+    <module name="-graphs" />
     <option name="options" />
     <option name="profiles" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
