@@ -19,6 +19,10 @@
       (is (spanning-tree? g (graph [A B C] [A B] [B C])))
       (is (not (spanning-tree? g (graph [A B] [A B]))))
       (is (not (spanning-tree? g (graph [A B C] [A B] [B C] [C A]))))))
+  (testing "n = 3, already a tree"
+    (let [g (graph [A B C] [A B] [B C])]
+      (is (spanning-tree? g (graph [A B C] [A B] [B C])))
+      (is (not (spanning-tree? g (graph [A B C] [A B] [A C]))))))
   (testing "n = 4"
     (let [g (g/complete-graph [A B C D])]
       (is (spanning-tree? g (graph [A B C D] [A B] [B C] [C D])))
